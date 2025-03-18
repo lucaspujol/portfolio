@@ -994,3 +994,7 @@ body.dark-theme .hero-image {
   border-radius: 4px;
   margin-bottom: 20px;
 }
+
+.captcha-container {
+  margin: 20px 0;
+}

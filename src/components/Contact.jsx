@@ -1,8 +1,10 @@
 import React, { useState, useRef } from 'react';
 import emailjs from 'emailjs-com';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 const Contact = () => {
     const form = useRef();
+    const recaptchaRef = useRef();
     const [status, setStatus] = useState({
         submitted: false,
         submitting: false,
@@ -13,6 +15,7 @@ const Contact = () => {
         email: '',
         message: ''
     });
+    const [captchaVerified, setCaptchaVerified] = useState(false);
 
     const handleOnChange = e => {
         setInputs({
@@ -21,8 +24,22 @@ const Contact = () => {
         });
     };
 
+    const handleCaptchaChange = (token) => {
+        setCaptchaVerified(token ? true : false);
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        if (!captchaVerified) {
+            setStatus({
+                submitted: false,
+                submitting: false,
+                info: { error: true, msg: 'Please complete the CAPTCHA verification.' }
+            });
+            return;
+        }
+
         setStatus({
             submitted: false,
             submitting: true,
@@ -46,6 +63,10 @@ const Contact = () => {
                 email: '',
                 message: ''
             });
+            // Reset the captcha
+            setCaptchaVerified(false);
+            recaptchaRef.current.reset();
+            
             setTimeout(() => {
                 setStatus({
                     submitted: false,
@@ -105,6 +126,14 @@ const Contact = () => {
                             ></textarea>
                         </div>
                         
+                        <div className="form-group captcha-container">
+                            <ReCAPTCHA
+                                ref={recaptchaRef}
+                                sitekey="6LdWy_gqAAAAAO5EuuJw-G8Fh34E6RuMf4ENUWy6"
+                                onChange={handleCaptchaChange}
+                            />
+                        </div>
+                        
                         {status.info.error && (
                             <div className="error-message">
                                 <p>{status.info.msg}</p>
@@ -120,7 +149,7 @@ const Contact = () => {
                         <button 
                             type="submit" 
                             className="button" 
-                            disabled={status.submitting}
+                            disabled={status.submitting || !captchaVerified}
                         >
                             {status.submitting ? 'Sending...' : 'Send Message'}
                         </button>
