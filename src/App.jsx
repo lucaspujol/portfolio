@@ -40,7 +40,7 @@ function App() {
                 });
             }
         };
-    }, []); // Empty dependency array means this runs once after initial render
+    }, []);
     
     return (
         <ThemeProvider>
