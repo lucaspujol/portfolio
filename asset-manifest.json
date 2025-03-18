@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/llucaspujol.dev/static/css/main.2b2d7b94.chunk.css",
+    "main.js": "/llucaspujol.dev/static/js/main.63e99326.chunk.js",
+    "main.js.map": "/llucaspujol.dev/static/js/main.63e99326.chunk.js.map",
+    "runtime-main.js": "/llucaspujol.dev/static/js/runtime-main.9843acdb.js",
+    "runtime-main.js.map": "/llucaspujol.dev/static/js/runtime-main.9843acdb.js.map",
+    "static/js/2.377530ba.chunk.js": "/llucaspujol.dev/static/js/2.377530ba.chunk.js",
+    "static/js/2.377530ba.chunk.js.map": "/llucaspujol.dev/static/js/2.377530ba.chunk.js.map",
+    "index.html": "/llucaspujol.dev/index.html",
+    "static/css/main.2b2d7b94.chunk.css.map": "/llucaspujol.dev/static/css/main.2b2d7b94.chunk.css.map",
+    "static/js/2.377530ba.chunk.js.LICENSE.txt": "/llucaspujol.dev/static/js/2.377530ba.chunk.js.LICENSE.txt",
+    "static/media/resume.e9296092.pdf": "/llucaspujol.dev/static/media/resume.e9296092.pdf",
+    "static/media/rick.ba042f8f.jpeg": "/llucaspujol.dev/static/media/rick.ba042f8f.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9843acdb.js",
+    "static/js/2.377530ba.chunk.js",
+    "static/css/main.2b2d7b94.chunk.css",
+    "static/js/main.63e99326.chunk.js"
+  ]
+}
