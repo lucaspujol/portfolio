@@ -45,7 +45,7 @@ function App() {
     return (
         <ThemeProvider>
             <div className="app-container">
-                {/* <Header /> */}
+                <Header />
                 <main className="main-content">
                     <Hero />
                     <About />
