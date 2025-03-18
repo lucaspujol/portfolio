@@ -64,7 +64,7 @@ const Projects = () => {
             image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f',
             tech: ['React', 'JavaScript', 'CSS'],
             liveLink: 'https://project-three.com',
-            codeLink: 'https://github.com/user/project-three'
+            codeLink: 'https://github.com/lucaspujol/portfolio'
         }
     ];
 
