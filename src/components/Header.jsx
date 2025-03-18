@@ -6,17 +6,14 @@ const Header = () => {
     const [scrolled, setScrolled] = useState(false);
     const { isDarkMode, toggleTheme } = useContext(ThemeContext);
 
-    // Toggle menu
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
 
-    // Close menu when clicking on a link
     const closeMenu = () => {
         setMenuOpen(false);
     };
 
-    // Check if page has been scrolled
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 50) {
