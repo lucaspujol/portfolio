@@ -552,6 +552,7 @@ p {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  min-height: 250px;
 }
 
 /* More subtle title */
@@ -567,12 +568,7 @@ p {
   line-height: 1.5;
   color: #666;
   margin-bottom: 10px;
-  /* Optional: limit description to 3 lines */
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  min-height: 80px;
 }
 
 /* Cleaner tech tags */
