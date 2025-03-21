@@ -40,7 +40,7 @@ const About = () => {
                             I am looking for a 4 to 6 month internship in a company that will allow me to learn and grow.
                             I am open to all offers, for any type of position, in any field. I am really looking forward 
                             to learning new techs and working with a team of professionals.
-                            I love competitive video games and esports in general.
+                            I love competitive video games and esports.
                         </p>
                         
                         <div className="about-buttons">
