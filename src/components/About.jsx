@@ -33,14 +33,14 @@ const About = () => {
                     </div>
                     <div className="about-text">
                         <p>
-                            I am a passionate web developer with a background in computer science. 
-                            I specialize in creating responsive, user-friendly web applications
-                            that solve real business problems.
+                            Hey! 👋 I'm Lucas. I am a student at the campus of Epitech Montpellier.
+                            I love cybersecurity and C. I am also discovering a strong liking for web development.
                         </p>
                         <p>
-                            With over 5 years of experience in frontend development, I've mastered 
-                            modern frameworks and libraries like React, Vue, and Angular. I'm constantly 
-                            learning and adapting to new technologies to deliver cutting-edge solutions.
+                            I am looking for a 4 to 6 month internship in a company that will allow me to learn and grow.
+                            I am open to all offers, for any type of position, in any field. I am really looking forward 
+                            to learning new techs and working with a team of professionals.
+                            I love competitive video games and esports in general.
                         </p>
                         
                         <div className="about-buttons">
