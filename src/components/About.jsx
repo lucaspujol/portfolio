@@ -4,22 +4,19 @@ import resumePdf from '../assets/resume.pdf';
 const About = () => {
     const experiences = [
         {
-            title: "Senior Frontend Developer",
-            company: "Tech Innovations Inc.",
-            period: "2020 - Present",
-            description: "Leading the frontend development team in creating responsive web applications using React. Implemented performance optimizations resulting in 40% faster load times."
+            title: "Epitech Digital School Cursus",
+            company: "Epitech Montpellier",
+            period: "2023 - Present",
+            description: "Currently enrolled in the Epitech Digital School program, focusing on software development. \
+                Realised more than 25 projects, mostly in C, aiming to develop a strong basis in problem-solving and \
+                programming skills."
         },
         {
-            title: "UI/UX Developer",
-            company: "Creative Digital Agency",
-            period: "2018 - 2020",
-            description: "Designed and developed user interfaces for various clients across different industries. Collaborated with designers to implement pixel-perfect designs."
-        },
-        {
-            title: "Web Developer Intern",
-            company: "StartUp Solutions",
-            period: "2017 - 2018",
-            description: "Assisted in developing web applications using JavaScript, HTML, and CSS. Participated in code reviews and agile development processes."
+            title: "Bac Technologique",
+            company: "Lycée Victor Hugo (Lunel)",
+            period: "2021 - 2023",
+            description: "Completed a technological baccalaureate with a focus on computer science and digital technology. \
+                Gained fundamental knowledge in programming, and a strong logical mindset."
         }
     ];
 
@@ -29,7 +26,7 @@ const About = () => {
                 <h2>About Me</h2>
                 <div className="about-content">
                     <div className="about-image">
-                        <img src="https://img.freepik.com/photos-gratuite/codage-programme-informatique-ecran_53876-138060.jpg?t=st=1742159537~exp=1742163137~hmac=865b2e8c7575de74c27dd12c91031f8bddcfa1cc9fae35c962c91347a0936af4&w=826" alt="Profile" />
+                        <img src="https://shorturl.at/3JKTm" alt="Profile" />
                     </div>
                     <div className="about-text">
                         <p>

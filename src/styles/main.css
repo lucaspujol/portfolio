@@ -55,7 +55,6 @@ html {
   padding: 0;
 }
 
-/* Update body styles to use new variables */
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -66,7 +65,6 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* App Container for Centering */
 .app-container {
   display: flex;
   flex-direction: column;
@@ -82,7 +80,6 @@ body {
   width: 100%;
 }
 
-/* Header & Navigation */
 header {
   background: var(--header-background);
   color: var(--header-text);
@@ -374,7 +371,6 @@ p {
   min-width: 300px;
 }
 
-/* Enhanced About Section */
 .experience-section {
   margin-top: 60px;
 }
@@ -482,7 +478,6 @@ p {
   color: var(--light-color);
 }
 
-/* Projects grid - Keep 4 columns but reduce the gap */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -490,7 +485,6 @@ p {
   margin-top: 40px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 1200px) {
   .projects-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -508,7 +502,7 @@ p {
     grid-template-columns: 1fr;
   }
 }
-/* Cleaner, more elegant project cards */
+
 .project-card {
   background-color: var(--card-background);
   border-radius: 10px;
@@ -525,7 +519,6 @@ p {
   box-shadow: 0 8px 15px rgba(0,0,0,0.1);
 }
 
-/* Better image handling with proper framing */
 .project-image {
   width: 100%;
   height: 180px;
@@ -541,12 +534,10 @@ p {
   transition: transform 0.5s ease;
 }
 
-/* Optional: Add subtle zoom effect on hover */
 .project-card:hover .project-image img {
   transform: scale(1.05);
 }
 
-/* More compact content area */
 .project-content {
   padding: 16px;
   flex-grow: 1;
@@ -555,14 +546,12 @@ p {
   min-height: 250px;
 }
 
-/* More subtle title */
 .project-title {
   font-size: 1.3rem;
   margin-bottom: 8px;
   font-weight: 600;
 }
 
-/* More compact description */
 .project-content p {
   font-size: 0.9rem;
   line-height: 1.5;
@@ -571,7 +560,6 @@ p {
   min-height: 80px;
 }
 
-/* Cleaner tech tags */
 .project-tech {
   display: flex;
   flex-wrap: wrap;
@@ -588,7 +576,6 @@ p {
   font-weight: 500;
 }
 
-/* Smaller, more streamlined buttons */
 .project-links {
   margin-top: auto;
   display: flex;
@@ -737,9 +724,8 @@ footer a:hover {
   display: inline-block;
 }
 
-/* Update hover state to a color that works in both themes */
 body.dark-theme footer a:hover {
-  color: #8dc2ff; /* Lighter blue for dark theme */
+  color: #8dc2ff;
 }
 
 /* Animations */
@@ -758,7 +744,6 @@ body.dark-theme footer a:hover {
   animation: fadeIn 0.8s forwards;
 }
 
-/* Staggered animation for lists */
 .stagger-item {
   opacity: 0;
   animation: fadeIn 0.5s forwards;
@@ -865,7 +850,6 @@ body.dark-theme footer a:hover {
     transform: rotate(-45deg) translate(6px, -4px);
   }
   
-  /* Experience timeline for mobile */
   .experience-timeline:before {
     left: 20px;
   }
