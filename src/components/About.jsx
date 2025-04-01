@@ -4,7 +4,7 @@ import resumePdf from '../assets/resume.pdf';
 const About = () => {
     const experiences = [
         {
-            title: "Epitech Digital School Cursus",
+            title: "Epitech Programme Grande École",
             company: "Epitech Montpellier",
             period: "2023 - Present",
             description: "Currently enrolled in the Epitech Digital School program, focusing on software development. \
