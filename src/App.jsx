@@ -48,8 +48,8 @@ function App() {
                 <Header />
                 <main className="main-content">
                     <Hero />
-                    <About />
                     <Projects />
+                    <About />
                     <Skills />
                     <Contact />
                 </main>
