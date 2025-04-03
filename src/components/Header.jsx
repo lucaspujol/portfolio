@@ -62,7 +62,6 @@ const Header = () => {
                 </div>
                 
                 <nav className={menuOpen ? 'active' : ''}>
-                    <a href="#home" onClick={closeMenu}>Home</a>
                     <a href="#projects" onClick={closeMenu}>Projects</a>
                     <a href="#about" onClick={closeMenu}>About</a>
                     <a href="#skills" onClick={closeMenu}>Skills</a>
