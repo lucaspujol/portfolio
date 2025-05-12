@@ -33,7 +33,7 @@ const Header = () => {
         <header className={scrolled ? 'scrolled' : ''}>
             <div className="container header-container">
                 <div className="logo">
-                    <a href="#home">Portfolio</a>
+                    <a href="#home">Lucas Pujol</a>
                 </div>
                 
                 <div className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
