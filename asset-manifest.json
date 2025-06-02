@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.9074fa95.chunk.css",
-    "main.js": "/portfolio/static/js/main.6b2fcdbc.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.6b2fcdbc.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.dafd3b51.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.dafd3b51.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.1504d703.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.1504d703.js.map",
     "static/js/2.dd7130ca.chunk.js": "/portfolio/static/js/2.dd7130ca.chunk.js",
@@ -10,13 +10,13 @@
     "index.html": "/portfolio/index.html",
     "static/css/main.9074fa95.chunk.css.map": "/portfolio/static/css/main.9074fa95.chunk.css.map",
     "static/js/2.dd7130ca.chunk.js.LICENSE.txt": "/portfolio/static/js/2.dd7130ca.chunk.js.LICENSE.txt",
-    "static/media/resume.e9296092.pdf": "/portfolio/static/media/resume.e9296092.pdf",
-    "static/media/rick.ba042f8f.jpeg": "/portfolio/static/media/rick.ba042f8f.jpeg"
+    "static/media/photo_profil.3d77121a.jpg": "/portfolio/static/media/photo_profil.3d77121a.jpg",
+    "static/media/resume.ab7bb20e.pdf": "/portfolio/static/media/resume.ab7bb20e.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.1504d703.js",
     "static/js/2.dd7130ca.chunk.js",
     "static/css/main.9074fa95.chunk.css",
-    "static/js/main.6b2fcdbc.chunk.js"
+    "static/js/main.dafd3b51.chunk.js"
   ]
 }
