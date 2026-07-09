@@ -1,0 +1,22 @@
+// Rebuilds the tab favicon as a data-URI SVG using the site's current
+// --accent value. Called whenever the accent or theme changes.
+export function updateFavicon() {
+  const accent = getComputedStyle(document.documentElement)
+    .getPropertyValue('--accent')
+    .trim() || '#5fb98d';
+
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="7" fill="#151518"/>
+  <path d="M10 11 L16 16 L10 21" fill="none" stroke="${accent}" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="17.5" y1="21.5" x2="23" y2="21.5" stroke="${accent}" stroke-width="2.6" stroke-linecap="round"/>
+</svg>`;
+
+  let link = document.querySelector('link[rel="icon"]');
+  if (!link) {
+    link = document.createElement('link');
+    link.rel = 'icon';
+    document.head.appendChild(link);
+  }
+  link.type = 'image/svg+xml';
+  link.href = 'data:image/svg+xml,' + encodeURIComponent(svg);
+}

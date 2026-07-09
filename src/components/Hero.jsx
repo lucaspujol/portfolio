@@ -1,19 +1,36 @@
-import React from 'react';
-import profileImage from '../assets/photo_profil.jpg';
+import resumePdf from '../assets/resume.pdf';
+import { profile } from '../data/profile.js';
+import { GitHubIcon, LinkedInIcon, MailIcon, DownloadIcon } from './icons/index.jsx';
 
-const Hero = () => {
+export default function Hero() {
+  const { name, role, tagline, intro, links } = profile;
+
   return (
-    <section className="hero" id="home">
-      <div className="hero-content">
-        <a href="https://www.linkedin.com/in/lucas-pujol-epitech/" target="_blank" rel="noopener noreferrer">
-          <img src={profileImage} alt="Lucas Pujol" className="hero-image" />
+    <section id="top" className="hero">
+      <p className="hero-eyebrow">{role}</p>
+      <h1 className="hero-name">{name}</h1>
+      <p className="hero-tagline">{tagline}</p>
+      <p className="hero-location">{intro}</p>
+
+      <div className="hero-actions">
+        <a className="btn" href="#work">View work</a>
+        <a className="btn btn-ghost" href={resumePdf} download>
+          <DownloadIcon />
+          Resume
         </a>
-        <h1>Lucas Pujol</h1>
-        <p>Student at Epitech Montpellier</p>
-        <a href="#projects" className="button">View my Work</a>
+      </div>
+
+      <div className="hero-socials">
+        <a href={links.github} target="_blank" rel="noreferrer" aria-label="GitHub">
+          <GitHubIcon />
+        </a>
+        <a href={links.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <LinkedInIcon />
+        </a>
+        <a href={`mailto:${links.email}`} aria-label="Email">
+          <MailIcon />
+        </a>
       </div>
     </section>
   );
-};
-
-export default Hero;
+}

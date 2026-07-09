@@ -1,15 +1,10 @@
-import React from 'react';
+import { profile } from '../data/profile.js';
 
-const Footer = () => {
-    return (
-        <footer>
-            <p>&copy; {new Date().getFullYear()} Lucas Pujol. All rights reserved.</p>
-            <div>
-                <a href="https://github.com/https://github.com/lucaspujol" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://www.linkedin.com/in/lucas-pujol-epitech/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            </div>
-        </footer>
-    );
-};
-
-export default Footer;
+export default function Footer() {
+  return (
+    <footer className="site-footer">
+      <span>© {new Date().getFullYear()} {profile.name}</span>
+      <span className="muted">Built with React · Vite</span>
+    </footer>
+  );
+}
