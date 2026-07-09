@@ -1,73 +1,30 @@
-# 🚀 React Portfolio 💫
+# portfolio
 
-A modern, responsive one-page portfolio website built with React. This application uses modern web technologies and best practices to create an engaging user experience with smooth animations and a clean design. ✨
+Personal portfolio — Lucas Pujol. One page, minimal, dark/light.
 
-## ✅ Features
+Built with React + Vite. No external UI dependencies; plain CSS, inline SVG icons.
 
-- **🔄 Responsive Design**: Fully responsive layout that works on all device sizes
-- **🌓 Dark/Light Theme**: Toggle between dark and light modes with theme persistence
-- **🎭 Smooth Animations**: Section reveal animations using Intersection Observer API
-- **⚡ Staggered List Animations**: Sequential list item animations for a polished look
-- **👆 Interactive UI Elements**: Hover effects and transitions for enhanced user experience
-- **📱 Mobile-Friendly Navigation**: Hamburger menu for smaller screens
-- **🏗️ Section-Based Layout**: 
-  - 🦸‍♂️ Hero section with call-to-action
-  - 👨‍💼 About section with professional background
-  - 🛠️ Projects showcase with filterable grid
-  - 🧠 Skills presentation organized by category
-  - 📬 Contact form with validation
-  - 🔗 Footer with social links
+## Development
 
-## 💻 Technologies Used
+```bash
+npm install
+npm run dev      # http://localhost:5173/portfolio/
+```
 
-### 🔧 Frontend Framework
-- **⚛️ React**: Component-based UI development
-- **🌐 Context API**: Theme management and global state
+## Build & deploy
 
-### 🎨 User Interface
-- **🖌️ Modern CSS**: Custom CSS with variables for theming
-- **📏 Responsive Design**: Media queries and flexible layouts
-- **✨ CSS Animations**: Transitions and keyframe animations
+```bash
+npm run build    # outputs to dist/
+npm run deploy   # publishes dist/ to gh-pages
+```
 
-### ⚡ Performance Optimizations
-- **👁️ Intersection Observer API**: Efficient scroll-based animations
-- **🎨 CSS Variables**: Dynamic theming with minimal overhead
-- **🪝 React Hooks**: Functional components with optimized rendering
+Deployed at https://lucaspujol.github.io/portfolio.
 
-### 🌐 Browser APIs
-- **💾 LocalStorage**: Theme preference persistence
-- **🔍 Media Queries**: Detecting user color scheme preference
+## Structure
 
-## 🏁 Getting Started
+- `src/data/` — content (`profile.js`, `projects.js`). Edit these to update the site.
+- `src/components/` — small, single-purpose components.
+- `src/styles/global.css` — design tokens and layout.
 
-To get a local copy up and running, follow these simple steps:
-
-1. **📥 Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/react-portfolio.git
-   ```
-
-2. **📂 Navigate to the project directory**
-   ```bash
-   cd react-portfolio
-   ```
-
-3. **📦 Install dependencies**
-   ```bash
-   npm install
-   ```
-
-4. **🚀 Run the application**
-   ```bash
-   npm start
-   ```
-
-The application will be running on `http://localhost:3000`. 🎉
-
-## 🔍 Implementation Details
-
-### ✨ Animation System
-The portfolio uses the Intersection Observer API to efficiently detect when elements enter the viewport, triggering animations only when necessary. This approach is more performance-friendly than traditional scroll event listeners. 🚀
-
-### 🌓 Theming System
-The application implements a comprehensive theming system using CSS variables and React's Context API, allowing for seamless switching between light and dark modes while persisting user preferences. 🎭
+Some Epitech projects are private (org policy). Their cards show no repo link
+until a public mirror exists — add the link in `src/data/projects.js`.
