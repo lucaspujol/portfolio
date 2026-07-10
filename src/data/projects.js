@@ -11,6 +11,7 @@ export const featuredProjects = [
     team: true,
     links: [
       { type: 'github', href: 'https://github.com/louisbgl/raytracer-mirror' },
+      { type: 'docs', href: 'https://louisbgl.github.io/raytracer-mirror' },
     ],
   },
   {
@@ -19,7 +20,10 @@ export const featuredProjects = [
       'Multi-agent network game: a C++ game server, a 3D spectator client (Raylib) and an autonomous Python AI running state-machine and score-based strategies.',
     tech: ['C++', 'Python', 'Raylib'],
     team: true,
-    links: [{ type: 'github', href: 'https://github.com/Nexlein/Zappy' }],
+    links: [
+      { type: 'github', href: 'https://github.com/Nexlein/Zappy' },
+      { type: 'docs', href: 'https://nexlein.github.io/Zappy' },
+    ],
   },
   {
     name: 'Arcade',
@@ -36,7 +40,7 @@ export const featuredProjects = [
     name: 'NanoTekSpice',
     blurb:
       'Digital logic circuit simulator modeled as a component graph — gates, latches, flip-flops and sequential components. Built test-first with heavy edge-case coverage.',
-    tech: ['C++', 'TDD'],
+    tech: ['C++'],
     team: true,
     private: true,
     links: [],
