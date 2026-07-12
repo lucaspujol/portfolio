@@ -1,6 +1,6 @@
 // links: { type: 'github' | 'demo' | 'docs' | 'store', href }
-// private: true  -> no repo link yet (Epitech org keeps some repos private;
-//                   create a public mirror, then add the github link here)
+// Empty links[] renders as "private repo" (Epitech org keeps some repos
+// private; create a public mirror, then add the github link here).
 
 export const featuredProjects = [
   {
@@ -42,7 +42,6 @@ export const featuredProjects = [
       'Digital logic circuit simulator modeled as a component graph — gates, latches, flip-flops and sequential components. Built test-first with heavy edge-case coverage.',
     tech: ['C++'],
     kind: 'school',
-    private: true,
     links: [],
   },
   {
