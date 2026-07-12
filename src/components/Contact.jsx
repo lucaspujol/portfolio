@@ -9,8 +9,8 @@ export default function Contact() {
     <section id="contact" className="section">
       <SectionHeading index="05" title="Get in touch" />
       <p className="contact-lead">
-        Looking for a work-study from mid-September to mid-January. The fastest
-        way to reach me is email.
+        Feel free to reach out to me via email or connect with me on GitHub and 
+        LinkedIn. 
       </p>
       <div className="contact-links">
         <a className="contact-link" href={`mailto:${links.email}`}>
