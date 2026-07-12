@@ -8,7 +8,12 @@ export default function Hero() {
   return (
     <section id="top" className="hero">
       <p className="hero-eyebrow">{role}</p>
-      <h1 className="hero-name">{name}</h1>
+      <h1 className="hero-name">
+        <span className="hero-prompt" aria-hidden="true">
+          &gt;<span className="hero-caret">_</span>
+        </span>
+        {name}
+      </h1>
       <p className="hero-tagline">{tagline}</p>
       <p className="hero-location">{intro}</p>
 

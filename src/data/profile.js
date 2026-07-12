@@ -37,7 +37,7 @@ export const profile = {
         'Software engineering. 25+ projects in C and C++, including a full OOP module (design, interfaces, plugin architectures). Focus on problem solving, systems and clean code.',
     },
     {
-      title: 'Baccalauréat Technologique (STI2D)',
+      title: 'Bac Technologique (STI2D)',
       org: 'Lycée Victor Hugo, Lunel',
       period: '2021 — 2023',
       description:

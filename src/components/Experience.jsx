@@ -7,8 +7,8 @@ export default function Experience({ items = [] }) {
           <div className="exp-line">
             <span className="exp-period">{exp.period}</span>
             <span className="exp-title">{exp.title}</span>
-            <span className="muted">— {exp.org}</span>
           </div>
+          <span className="exp-org">{exp.org}</span>
           <p className="exp-desc">{exp.description}</p>
         </div>
       ))}
