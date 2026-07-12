@@ -15,12 +15,20 @@ export const profile = {
     ],
   },
   about: [
-    "Software engineering student at Epitech Montpellier. My favorite language (and the one im most comfortable with) is C++.",
-    "More than functional code, I love building robust and maintainable architectures. I like to ship: tests, CI, docs, having a real product at the end of a project, not just a half-finished demo.",
-    "I build a lot on my own: a CPU raytracer, a double-pendulum simulator, a QR encoder from scratch. I like getting the architecture right and actually shipping — tests, CI and docs, not a half-finished demo.",
-    "I'm looking for a work-study from mid-September to mid-January, around C++/OOP systems, backend or graphics. I want a real product to work on and a team whose code makes me better.",
+    "Software engineering student at Epitech Montpellier. My favorite language (and the one im most comfortable with) is currently C++.",
+    "What I enjoy the most is not just writing code, but designing full architectures. I like to think about the interfaces, the abstractions, the patterns, the relationships between components...",
+    "I also love building complete projects: this means not just functional code, but also tests, CI/CD, documentation, and so on.",
+    "For my second year at Epitech, I focused on team-based development, and learned how to work with teams up to 5 people, using GitHub in its (almost) full extent, GitHub Actions, Github Projects, and more. ",
+    "Below you can find a bunch of my projects, and the techstack used. You will find a mix of personal and school projects.",
   ],
   experience: [
+    {
+      title: 'Web Developer Internship',
+      org: 'Scale Theme',
+      period: 'July — November 2025',
+      description:
+        'Full-stack web development internship. Worked with React, Next.js, TailwindCSS, PHP, MySQL and more. Mostly frontend work, but also some backend and database work.'
+    },
     {
       title: 'Programme Grande École',
       org: 'Epitech Montpellier',
@@ -38,7 +46,7 @@ export const profile = {
   ],
   stack: {
     Languages: ['C', 'C++', 'Python', 'Java', 'JavaScript', 'Bash'],
-    Graphics: ['SFML', 'SDL2', 'Raylib'],
+    Graphics: ['SFML', 'SDL2', 'HTML', 'CSS', 'React'],
     Tools: ['Git', 'CMake', 'Make', 'Linux', 'GitHub Actions', 'Doxygen'],
   },
   links: {
