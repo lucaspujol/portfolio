@@ -28,17 +28,26 @@ export default function AccentPicker() {
     const onClick = (e) => {
       if (ref.current && !ref.current.contains(e.target)) setOpen(false);
     };
+    const onKey = (e) => {
+      if (e.key === 'Escape') setOpen(false);
+    };
     document.addEventListener('mousedown', onClick);
-    return () => document.removeEventListener('mousedown', onClick);
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.removeEventListener('mousedown', onClick);
+      document.removeEventListener('keydown', onKey);
+    };
   }, [open]);
 
   return (
     <div className="accent-picker" ref={ref}>
       <button
         type="button"
-        className="accent-swatch-btn"
+        className="icon-btn accent-swatch-btn"
         onClick={() => setOpen((o) => !o)}
         aria-label={ui.accentPicker.ariaLabel}
+        aria-haspopup="dialog"
+        aria-expanded={open}
       >
         <span className="accent-current" />
       </button>
