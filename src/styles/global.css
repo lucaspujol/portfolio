@@ -279,7 +279,7 @@ a {
 
 /* ---------- hero ---------- */
 .hero {
-  padding: 96px 0 72px;
+  padding: 72px 0 32px;
 }
 
 .hero-eyebrow {
@@ -507,6 +507,119 @@ a {
   margin-bottom: 12px;
 }
 
+/* ---------- status ---------- */
+.status-card {
+  position: relative;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 24px;
+  overflow: hidden;
+}
+
+.status-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--accent);
+}
+
+.status-card-head {
+  margin-bottom: 14px;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  background: var(--tag-bg);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  padding: 5px 12px 5px 10px;
+}
+
+.status-badge.is-available {
+  color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
+}
+
+.status-dot {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--muted);
+}
+
+.status-badge.is-available .status-dot {
+  background: var(--accent);
+}
+
+.status-badge.is-available .status-dot::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: status-pulse 2s ease-out infinite;
+}
+
+@keyframes status-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .status-badge.is-available .status-dot::after {
+    animation: none;
+  }
+}
+
+.status-statement {
+  max-width: 40rem;
+  color: var(--muted);
+  font-size: 0.98rem;
+  margin-bottom: 22px;
+}
+
+.status-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 24px;
+}
+
+.status-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.status-item-label {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.status-item-value {
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
 /* ---------- about ---------- */
 .about-text {
   display: flex;
@@ -647,6 +760,9 @@ a {
   .minor-main {
     flex-direction: column;
     gap: 2px;
+  }
+  .status-grid {
+    grid-template-columns: 1fr;
   }
   .site-footer {
     flex-direction: column;
