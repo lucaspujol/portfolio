@@ -1,7 +1,6 @@
-const marks = {
-  school: { glyph: '{}', label: 'Epitech project' },
-  perso: { glyph: '>', label: 'Personal project' },
-};
+import { ui } from '../data/ui.js';
+
+const marks = ui.projects.marks;
 
 export default function ProjectMark({ kind }) {
   const mark = marks[kind] ?? marks.perso;

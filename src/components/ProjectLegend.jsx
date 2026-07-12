@@ -1,9 +1,7 @@
 import ProjectMark from './ProjectMark.jsx';
+import { ui } from '../data/ui.js';
 
-const items = [
-  { kind: 'perso', label: 'Personal' },
-  { kind: 'school', label: 'Epitech' },
-];
+const items = ui.projects.legend;
 
 export default function ProjectLegend() {
   return (

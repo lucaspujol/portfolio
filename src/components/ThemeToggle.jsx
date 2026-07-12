@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { ThemeContext } from '../context/ThemeContext.jsx';
+import { ui } from '../data/ui.js';
 import { SunIcon, MoonIcon } from './icons/index.jsx';
 
 export default function ThemeToggle() {
@@ -11,7 +12,7 @@ export default function ThemeToggle() {
       type="button"
       className="theme-toggle"
       onClick={toggleTheme}
-      aria-label={`Switch to ${isDark ? 'light' : 'dark'} theme`}
+      aria-label={ui.themeToggle.ariaLabel(isDark)}
     >
       {isDark ? <SunIcon /> : <MoonIcon />}
     </button>

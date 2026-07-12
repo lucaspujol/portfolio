@@ -1,4 +1,5 @@
 import { profile } from '../data/profile.js';
+import { ui } from '../data/ui.js';
 import SectionHeading from './SectionHeading.jsx';
 import Experience from './Experience.jsx';
 
@@ -7,7 +8,7 @@ export default function About() {
 
   return (
     <section id="about" className="section">
-      <SectionHeading index="02" title="About" />
+      <SectionHeading {...ui.sections.about} />
       <div className="about-text">
         {about.map((p, i) => (
           <p key={i}>{p}</p>

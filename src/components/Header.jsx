@@ -1,21 +1,16 @@
 import ThemeToggle from './ThemeToggle.jsx';
 import AccentPicker from './AccentPicker.jsx';
-
-const navLinks = [
-  { href: '#status', label: 'Status' },
-  { href: '#work', label: 'Work' },
-  { href: '#about', label: 'About' },
-  { href: '#stack', label: 'Stack' },
-  { href: '#contact', label: 'Contact' },
-];
+import { ui } from '../data/ui.js';
 
 export default function Header() {
+  const { logo, nav } = ui.header;
+
   return (
     <header className="site-header">
       <div className="header-inner">
-        <a href="#top" className="logo">lucaspujol</a>
+        <a href="#top" className="logo">{logo}</a>
         <nav className="nav">
-          {navLinks.map((l) => (
+          {nav.map((l) => (
             <a key={l.href} href={l.href}>{l.label}</a>
           ))}
         </nav>

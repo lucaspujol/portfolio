@@ -1,4 +1,5 @@
 import { profile } from '../data/profile.js';
+import { ui } from '../data/ui.js';
 import SectionHeading from './SectionHeading.jsx';
 
 export default function Stack() {
@@ -6,7 +7,7 @@ export default function Stack() {
 
   return (
     <section id="stack" className="section">
-      <SectionHeading index="04" title="Stack" />
+      <SectionHeading {...ui.sections.stack} />
       <div className="stack-grid">
         {groups.map(([group, items]) => (
           <div className="stack-group" key={group}>

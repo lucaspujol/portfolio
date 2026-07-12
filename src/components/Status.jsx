@@ -1,4 +1,5 @@
 import { profile } from '../data/profile.js';
+import { ui } from '../data/ui.js';
 import SectionHeading from './SectionHeading.jsx';
 import StatusBadge from './StatusBadge.jsx';
 import StatusGrid from './StatusGrid.jsx';
@@ -8,7 +9,7 @@ export default function Status() {
 
   return (
     <section id="status" className="section">
-      <SectionHeading index="01" title="Status" />
+      <SectionHeading {...ui.sections.status} />
       <div className="status-card">
         <div className="status-card-head">
           <StatusBadge available={status.available} label={status.label} />

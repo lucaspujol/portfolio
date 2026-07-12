@@ -1,9 +1,11 @@
 import resumePdf from '../assets/resume.pdf';
 import { profile } from '../data/profile.js';
+import { ui } from '../data/ui.js';
 import { GitHubIcon, LinkedInIcon, MailIcon, DownloadIcon } from './icons/index.jsx';
 
 export default function Hero() {
   const { name, role, tagline, intro, links } = profile;
+  const { viewWork, resume, social } = ui.hero;
 
   return (
     <section id="top" className="hero">
@@ -18,21 +20,21 @@ export default function Hero() {
       <p className="hero-location">{intro}</p>
 
       <div className="hero-actions">
-        <a className="btn" href="#work">View work</a>
+        <a className="btn" href="#work">{viewWork}</a>
         <a className="btn btn-ghost" href={resumePdf} download>
           <DownloadIcon />
-          Resume
+          {resume}
         </a>
       </div>
 
       <div className="hero-socials">
-        <a href={links.github} target="_blank" rel="noreferrer" aria-label="GitHub">
+        <a href={links.github} target="_blank" rel="noreferrer" aria-label={social.github}>
           <GitHubIcon />
         </a>
-        <a href={links.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn">
+        <a href={links.linkedin} target="_blank" rel="noreferrer" aria-label={social.linkedin}>
           <LinkedInIcon />
         </a>
-        <a href={`mailto:${links.email}`} aria-label="Email">
+        <a href={`mailto:${links.email}`} aria-label={social.email}>
           <MailIcon />
         </a>
       </div>

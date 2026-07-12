@@ -1,15 +1,11 @@
 import { LinkTypeIcon } from './icons/index.jsx';
+import { ui } from '../data/ui.js';
 
-const label = {
-  github: 'Code',
-  docs: 'Docs',
-  demo: 'Demo',
-  store: 'Store',
-};
+const { labels, fallback, private: privateLabel } = ui.projects.links;
 
 export default function ProjectLinks({ links = [], compact = false }) {
   if (!links.length) {
-    return <span className="link-muted">private repo</span>;
+    return <span className="link-muted">{privateLabel}</span>;
   }
   return (
     <div className={compact ? 'links compact' : 'links'}>
@@ -22,7 +18,7 @@ export default function ProjectLinks({ links = [], compact = false }) {
           className="link"
         >
           <LinkTypeIcon type={l.type} />
-          {label[l.type] ?? 'Link'}
+          {labels[l.type] ?? fallback}
         </a>
       ))}
     </div>

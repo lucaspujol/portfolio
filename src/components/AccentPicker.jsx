@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import ColorWheel from './ColorWheel.jsx';
+import { ui } from '../data/ui.js';
 import { updateFavicon } from '../utils/favicon.js';
 
 const applyAccent = (value) => {
@@ -37,7 +38,7 @@ export default function AccentPicker() {
         type="button"
         className="accent-swatch-btn"
         onClick={() => setOpen((o) => !o)}
-        aria-label="Change accent color"
+        aria-label={ui.accentPicker.ariaLabel}
       >
         <span className="accent-current" />
       </button>
@@ -46,13 +47,13 @@ export default function AccentPicker() {
         <div className="accent-popover">
           <ColorWheel value={accent} onChange={setAccent} />
           <div className="accent-foot">
-            <span className="accent-hex">{accent || 'default'}</span>
+            <span className="accent-hex">{accent || ui.accentPicker.default}</span>
             <button
               type="button"
               className="accent-reset"
               onClick={() => setAccent('')}
             >
-              Reset
+              {ui.accentPicker.reset}
             </button>
           </div>
         </div>
