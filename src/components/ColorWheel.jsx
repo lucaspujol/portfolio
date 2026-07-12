@@ -45,9 +45,18 @@ function thumbFromHex(hex) {
   return { x: R + dist * Math.sin(rad), y: R - dist * Math.cos(rad) };
 }
 
+const currentAccent = () =>
+  getComputedStyle(document.documentElement).getPropertyValue('--accent').trim();
+
 export default function ColorWheel({ value, onChange }) {
   const canvasRef = useRef(null);
-  const [thumb, setThumb] = useState(() => thumbFromHex(value));
+  const [thumb, setThumb] = useState(() => thumbFromHex(value || currentAccent()));
+
+  useEffect(() => {
+    if (value) return;
+    const id = requestAnimationFrame(() => setThumb(thumbFromHex(currentAccent())));
+    return () => cancelAnimationFrame(id);
+  }, [value]);
 
   // paint the HSV wheel once (hue = angle, saturation = radius, value = 1)
   useEffect(() => {
@@ -117,12 +126,14 @@ export default function ColorWheel({ value, onChange }) {
         width={SIZE}
         height={SIZE}
         className="wheel"
+        draggable={false}
+        onDragStart={(e) => e.preventDefault()}
         onPointerDown={onPointerDown}
       />
       {thumb && (
         <span
           className="wheel-thumb"
-          style={{ left: thumb.x, top: thumb.y, background: value || '#fff' }}
+          style={{ left: thumb.x, top: thumb.y, background: value || currentAccent() }}
         />
       )}
     </div>
