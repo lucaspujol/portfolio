@@ -24,9 +24,30 @@ function hsvToRgb(h, s, v) {
 const toHex = (r, g, b) =>
   '#' + [r, g, b].map((v) => v.toString(16).padStart(2, '0')).join('');
 
+// hex -> wheel {x, y} (inverse of pick): hue = angle, saturation = radius.
+function thumbFromHex(hex) {
+  if (!/^#[0-9a-f]{6}$/i.test(hex || '')) return null;
+  const r = parseInt(hex.slice(1, 3), 16) / 255;
+  const g = parseInt(hex.slice(3, 5), 16) / 255;
+  const b = parseInt(hex.slice(5, 7), 16) / 255;
+  const max = Math.max(r, g, b);
+  const d = max - Math.min(r, g, b);
+  let h = 0;
+  if (d) {
+    if (max === r) h = ((g - b) / d) % 6;
+    else if (max === g) h = (b - r) / d + 2;
+    else h = (r - g) / d + 4;
+    h = (h * 60 + 360) % 360;
+  }
+  const s = max === 0 ? 0 : d / max;
+  const rad = (h * Math.PI) / 180;
+  const dist = s * R;
+  return { x: R + dist * Math.sin(rad), y: R - dist * Math.cos(rad) };
+}
+
 export default function ColorWheel({ value, onChange }) {
   const canvasRef = useRef(null);
-  const [thumb, setThumb] = useState(null);
+  const [thumb, setThumb] = useState(() => thumbFromHex(value));
 
   // paint the HSV wheel once (hue = angle, saturation = radius, value = 1)
   useEffect(() => {
