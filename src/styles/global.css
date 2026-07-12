@@ -11,6 +11,7 @@
   --border: #e6e5e2;
   --accent: #2f7d5b;
   --tag-bg: #f3f3f1;
+  --epitech: #0091d4;
 
   --max: 720px;
   --radius: 8px;
@@ -24,6 +25,7 @@
   --border: #242428;
   --accent: #63bd92;
   --tag-bg: #1b1b1e;
+  --epitech: #3fb0ea;
 }
 
 /* ---------- base ---------- */
@@ -397,15 +399,48 @@ a {
   font-weight: 600;
 }
 
-.tag-team,
-.tag-solo {
+/* ---------- project mark + legend ---------- */
+.project-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  min-width: 24px;
+  height: 20px;
+  padding: 0 5px;
   font-family: var(--mono);
-  font-size: 0.7rem;
-  border-radius: 100px;
-  padding: 1px 8px;
-  color: var(--accent);
-  border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--border));
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1;
+  border-radius: 5px;
+  border: 1px solid;
+}
 
+.project-mark-perso {
+  color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+}
+
+.project-mark-school {
+  color: var(--epitech);
+  border-color: color-mix(in srgb, var(--epitech) 45%, var(--border));
+  background: color-mix(in srgb, var(--epitech) 12%, transparent);
+}
+
+.project-legend {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 24px;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .card-blurb {
@@ -492,6 +527,9 @@ a {
 }
 
 .minor-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
   font-weight: 600;
 }
 

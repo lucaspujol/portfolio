@@ -8,7 +8,7 @@ export const featuredProjects = [
     blurb:
       'CPU raytracer in C++20 with a plugin architecture. Physically-based materials, fractal shapes, antialiasing, BVH acceleration and a real-time live preview.',
     tech: ['C++20', 'SFML', 'CMake'],
-    team: true,
+    kind: 'school',
     links: [
       { type: 'github', href: 'https://github.com/louisbgl/raytracer-mirror' },
       { type: 'docs', href: 'https://louisbgl.github.io/raytracer-mirror' },
@@ -19,7 +19,7 @@ export const featuredProjects = [
     blurb:
       'Multi-agent network game: a C++ game server, a 3D spectator client (Raylib) and an autonomous Python AI running state-machine and score-based strategies.',
     tech: ['C++', 'Python', 'Raylib'],
-    team: true,
+    kind: 'school',
     links: [
       { type: 'github', href: 'https://github.com/Nexlein/Zappy' },
       { type: 'docs', href: 'https://nexlein.github.io/Zappy' },
@@ -30,7 +30,7 @@ export const featuredProjects = [
     blurb:
       'Gaming platform that loads games and renderers as shared objects at runtime — fully interchangeable, with hot-reload. Built around abstract interfaces.',
     tech: ['C++', 'SDL2', 'ncurses'],
-    team: true,
+    kind: 'school',
     links: [
       { type: 'github', href: 'https://github.com/lucaspujol/arcade-mirror' },
       { type: 'docs', href: 'https://lucaspujol.github.io/arcade-mirror' },
@@ -41,7 +41,7 @@ export const featuredProjects = [
     blurb:
       'Digital logic circuit simulator modeled as a component graph — gates, latches, flip-flops and sequential components. Built test-first with heavy edge-case coverage.',
     tech: ['C++'],
-    team: true,
+    kind: 'school',
     private: true,
     links: [],
   },
@@ -50,6 +50,7 @@ export const featuredProjects = [
     blurb:
       'Double pendulum chaos simulator: RK4 integrator, synchronized grid view, and a fractal render mapping sensitivity to initial conditions.',
     tech: ['C++17', 'SFML'],
+    kind: 'perso',
     links: [{ type: 'github', href: 'https://github.com/lucaspujol/pendulums' }],
   },
   {
@@ -57,6 +58,7 @@ export const featuredProjects = [
     blurb:
       'QR code encoder written from scratch: data encoding, Reed-Solomon error correction, masking and matrix generation. Tested step by step.',
     tech: ['C++'],
+    kind: 'perso',
     links: [{ type: 'github', href: 'https://github.com/lucaspujol/cpp-qr' }],
   },
 ];
@@ -67,6 +69,7 @@ export const minorProjects = [
     blurb:
       'Header-only C++ command-line argument parser — typed API, flags, options, positionals, error handling.',
     tech: ['C++'],
+    kind: 'perso',
     links: [{ type: 'github', href: 'https://github.com/lucaspujol/clap' }],
   },
   {
@@ -74,6 +77,7 @@ export const minorProjects = [
     blurb:
       'Firefox extension that solves Wordle: reads the board and filters the word list in real time. Published on the Firefox Add-ons store.',
     tech: ['JavaScript'],
+    kind: 'perso',
     links: [
       { type: 'github', href: 'https://github.com/lucaspujol/solvle' },
       {
@@ -87,6 +91,7 @@ export const minorProjects = [
     blurb:
       'Tetris with SDL2: seven tetrominoes, wall-kick rotation, scoring and level progression.',
     tech: ['C++17', 'SDL2'],
+    kind: 'perso',
     links: [{ type: 'github', href: 'https://github.com/lucaspujol/cpp-tetris' }],
   },
 ];
