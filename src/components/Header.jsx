@@ -2,6 +2,7 @@ import ThemeToggle from './ThemeToggle.jsx';
 import AccentPicker from './AccentPicker.jsx';
 
 const navLinks = [
+  { href: '#status', label: 'Status' },
   { href: '#work', label: 'Work' },
   { href: '#about', label: 'About' },
   { href: '#stack', label: 'Stack' },

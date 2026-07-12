@@ -6,7 +6,7 @@ export default function Stack() {
 
   return (
     <section id="stack" className="section">
-      <SectionHeading index="03" title="Stack" />
+      <SectionHeading index="04" title="Stack" />
       <div className="stack-grid">
         {groups.map(([group, items]) => (
           <div className="stack-group" key={group}>

@@ -7,7 +7,7 @@ export default function About() {
 
   return (
     <section id="about" className="section">
-      <SectionHeading index="01" title="About" />
+      <SectionHeading index="02" title="About" />
       <div className="about-text">
         {about.map((p, i) => (
           <p key={i}>{p}</p>

@@ -7,7 +7,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="section">
-      <SectionHeading index="04" title="Get in touch" />
+      <SectionHeading index="05" title="Get in touch" />
       <p className="contact-lead">
         Looking for a work-study from mid-September to mid-January. The fastest
         way to reach me is email.

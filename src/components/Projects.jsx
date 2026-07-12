@@ -6,7 +6,7 @@ import SectionHeading from './SectionHeading.jsx';
 export default function Projects() {
   return (
     <section id="work" className="section">
-      <SectionHeading index="02" title="Selected work" />
+      <SectionHeading index="03" title="Selected work" />
       <div className="project-grid">
         {featuredProjects.map((p) => (
           <ProjectCard key={p.name} project={p} />
