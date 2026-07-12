@@ -1,5 +1,6 @@
 import Header from './components/Header.jsx';
 import Hero from './components/Hero.jsx';
+import Status from './components/Status.jsx';
 import Projects from './components/Projects.jsx';
 import About from './components/About.jsx';
 import Stack from './components/Stack.jsx';
@@ -12,6 +13,7 @@ export default function App() {
       <Header />
       <main className="content">
         <Hero />
+        <Status />
         <About />
         <Projects />
         <Stack />
