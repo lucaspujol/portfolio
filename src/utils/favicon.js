@@ -3,7 +3,7 @@
 export function updateFavicon() {
   const accent = getComputedStyle(document.documentElement)
     .getPropertyValue('--accent')
-    .trim() || '#5fb98d';
+    .trim() || '#55e02a';
 
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
   <rect width="32" height="32" rx="7" fill="#151518"/>
