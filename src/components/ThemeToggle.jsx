@@ -10,7 +10,7 @@ export default function ThemeToggle() {
   return (
     <button
       type="button"
-      className="theme-toggle"
+      className="icon-btn theme-toggle"
       onClick={toggleTheme}
       aria-label={ui.themeToggle.ariaLabel(isDark)}
     >
