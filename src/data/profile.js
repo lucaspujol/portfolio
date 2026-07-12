@@ -10,16 +10,16 @@ export const profile = {
     statement:
       'Looking for a 6 month work-study, as part of my Epitech curriculum.',
     items: [
-      { label: 'Window', value: '17 September -> 26 February' },
+      { label: 'Window', value: '17 September → 26 February' },
       { label: 'Based in', value: 'Montpellier, France' },
     ],
   },
   about: [
-    "Software engineering student at Epitech Montpellier. My favorite language (and the one im most comfortable with) is currently C++.",
+    "Software engineering student at Epitech Montpellier. My favorite language (and the one I'm most comfortable with) is currently C++.",
     "What I enjoy the most is not just writing code, but designing full architectures. I like to think about the interfaces, the abstractions, the patterns, the relationships between components...",
     "I also love building complete projects: this means not just functional code, but also tests, CI/CD, documentation, and so on.",
-    "For my second year at Epitech, I focused on team-based development, and learned how to work with teams up to 5 people, using GitHub in its (almost) full extent, GitHub Actions, Github Projects, and more. ",
-    "Below you can find a bunch of my projects, and the techstack used. You will find a mix of personal and school projects.",
+    "For my second year at Epitech, I focused on team-based development, and learned how to work with teams up to 5 people, using GitHub in its (almost) full extent, GitHub Actions, GitHub Projects, and more.",
+    "Below you can find a bunch of my projects, and the tech stack used. You will find a mix of personal and school projects.",
   ],
   experience: [
     {
