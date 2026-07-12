@@ -1,5 +1,4 @@
 import { createContext, useState, useEffect } from 'react';
-import { updateFavicon } from '../utils/favicon.js';
 
 export const ThemeContext = createContext();
 
@@ -17,7 +16,6 @@ export const ThemeProvider = ({ children }) => {
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
-    updateFavicon();
   }, [theme]);
 
   const toggleTheme = () =>
