@@ -42,7 +42,10 @@ export const featuredProjects = [
       'Header-only C++ command-line argument parser — typed API, flags, options, positionals, error handling.',
     tech: ['C++'],
     kind: 'perso',
-    links: [{ type: 'github', href: 'https://github.com/lucaspujol/clap' }],
+    links: [
+      { type: 'github', href: 'https://github.com/lucaspujol/clap' }
+      { type: 'docs', href: 'https://lucaspujol.github.io/clap' }
+    ],
   },
   {
     name: 'Pendulums',
