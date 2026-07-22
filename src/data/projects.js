@@ -37,12 +37,12 @@ export const featuredProjects = [
     ],
   },
   {
-    name: 'NanoTekSpice',
+    name: 'clap',
     blurb:
-      'Digital logic circuit simulator modeled as a component graph — gates, latches, flip-flops and sequential components. Built test-first with heavy edge-case coverage.',
+      'Header-only C++ command-line argument parser — typed API, flags, options, positionals, error handling.',
     tech: ['C++'],
-    kind: 'school',
-    links: [],
+    kind: 'perso',
+    links: [{ type: 'github', href: 'https://github.com/lucaspujol/clap' }],
   },
   {
     name: 'Pendulums',
@@ -64,12 +64,12 @@ export const featuredProjects = [
 
 export const minorProjects = [
   {
-    name: 'clap',
+    name: 'NanoTekSpice',
     blurb:
-      'Header-only C++ command-line argument parser — typed API, flags, options, positionals, error handling.',
+      'Digital logic circuit simulator modeled as a component graph — gates, latches, flip-flops and sequential components. Built test-first with heavy edge-case coverage.',
     tech: ['C++'],
-    kind: 'perso',
-    links: [{ type: 'github', href: 'https://github.com/lucaspujol/clap' }],
+    kind: 'school',
+    links: [],
   },
   {
     name: 'Solvle',
