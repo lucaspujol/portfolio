@@ -19,7 +19,7 @@ export const profile = {
     "What I enjoy the most is not just writing code, but designing full architectures. I like to think about the interfaces, the abstractions, the patterns, the relationships between components...",
     "I also love building complete projects: this means not just functional code, but also tests, CI/CD, documentation, and so on.",
     "For my second year at Epitech, I focused on team-based development, and learned how to work with teams up to 5 people, using GitHub in its (almost) full extent, GitHub Actions, GitHub Projects, and more.",
-    "Below you can find a bunch of my projects, and the tech stack used. You will find a mix of personal and school projects.",
+    "Below, in `selected work` section, you can find a bunch of my projects, and the tech stack used. You will find a mix of personal and school projects.",
   ],
   experience: [
     {
