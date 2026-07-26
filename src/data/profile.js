@@ -8,7 +8,7 @@ export const profile = {
     available: true,
     label: 'Open to work',
     statement:
-      'Looking for a 6 month work-study, as part of my Epitech curriculum.',
+      'Looking for a 6 month part-time internship, as part of my Epitech curriculum.',
     items: [
       { label: 'Window', value: '17 September → 26 February' },
       { label: 'Based in', value: 'Montpellier, France' },
